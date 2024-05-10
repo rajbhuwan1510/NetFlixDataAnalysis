@@ -75,7 +75,7 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 9. Frequent Directors and their Content Distribution
 10. Frequent Cast Members and their Involvement
 11. Changes in Genre Popularity Over Time
-![GenreVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/a44bad31-a938-4c10-a72a-76d52a10dbd0)
+![Popularity of Genres Over Time](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/1b3c67f0-0227-4e6d-812d-2a2b8526e526)
 
 12. Relationship Between Content Duration and Rating
 ![RatingCount](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/f03147db-7e9b-41c3-9c98-93167ad8dc07)
