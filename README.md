@@ -22,18 +22,18 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 
 - Number of rows and columns: [8807,9]
   - Data types :
-    - `show_id`         object
-    - `type`            object
-    - `title`           object
-    - `director`        object
-    - `cast`            object
-    - `country`         object
-    - `date_added`      datetime64[ns]
-    - `release_year`    int64
-    - `rating`          object
-    - `duration`        object
-    - `listed_in`       object
-    - `description`     object
+    - `show_id`         object  A unique identifier for each title.
+    - `type`            object  The category of the title, which is either 'Movie' or 'TV Show'.
+    - `title`           object  The name of the movie or TV show.
+    - `director`        object  The director(s) of the movie or TV show. (Contains null values for some entries, especially TV shows where this information might not be applicable.)
+    - `cast`            object  The list of main actors/actresses in the title. (Some entries might not have this information.)
+    - `country`         object  The country or countries where the movie or TV show was produced.
+    - `date_added`      datetime64[ns]  The date the title was added to Netflix.
+    - `release_year`    int64  The year the movie or TV show was originally released.
+    - `rating`          object  The age rating of the title.
+    - `duration`        object  The duration of the title, in minutes for movies and seasons for TV shows.
+    - `listed_in`       object  The genres the title falls under.
+    - `description`     object   A brief summary of the title.
 
 - Summary of central tendency and dispersion for numerical features.
 - Distribution of categorical features.
