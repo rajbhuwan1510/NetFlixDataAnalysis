@@ -21,20 +21,34 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 ### Data Understanding
 
 - Number of rows and columns: [8807,9]
-  - Data types :
-    - `show_id`         object  A unique identifier for each title.
-    - `type`            object  The category of the title, which is either 'Movie' or 'TV Show'.
-    - `title`           object  The name of the movie or TV show.
-    - `director`        object  The director(s) of the movie or TV show. (Contains null values for some entries, especially TV shows where this information might not be applicable.)
-    - `cast`            object  The list of main actors/actresses in the title. (Some entries might not have this information.)
-    - `country`         object  The country or countries where the movie or TV show was produced.
-    - `date_added`      datetime64[ns]  The date the title was added to Netflix.
-    - `release_year`    int64  The year the movie or TV show was originally released.
-    - `rating`          object  The age rating of the title.
-    - `duration`        object  The duration of the title, in minutes for movies and seasons for TV shows.
-    - `listed_in`       object  The genres the title falls under.
-    - `description`     object   A brief summary of the title.
+- `data/` https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows:
+  - Contains datasets used for analysis.
+- `notebooks/`: https://github.com/rajbhuwan1510/NetFlixDataAnalysis/blob/main/Netflix_project.ipynb
+  - Jupyter notebooks containing code for data analysis.
+- `results/`: Output files, visualizations, and summary reports.
 
+### Data Cleaning
+
+- Checked for missing values and handled them appropriately (dropping rows/columns, imputation).
+- Ensured correct data types for each column.
+- Identified and handled outliers or anomalies in the data.
+
+### Data Understanding
+
+- Number of rows and columns: [8807,9]
+  - Data types :
+    - `show_id`         : **object**  *A unique identifier for each title.*
+    - `type` :             **object**  *The category of the title, which is either 'Movie' or 'TV Show'.*
+    - `title` :            **object**  *The name of the movie or TV show.*
+    - `director` :       **object**  *The director(s) of the movie or TV 8show. (Contains null values for some entries, especially TV shows where this information might not be applicable.)
+    - `cast`:            **object**  *The list of main actors/actresses in the title. (Some entries might not have this information.)*
+    - `country`:         **object**  *The country or countries where the movie or TV show was produced.*
+    - `date_added`:      **datetime64[ns]**  *The date the title was added to Netflix.*
+    - `release_year`:    **int64**  *The year the movie or TV show was originally released.*
+    - `rating`:        **object**  *The age rating of the title.*
+    - `duration`:        **object**  *The duration of the title, in minutes for movies and seasons for TV shows.*
+    - `listed_in`:       **object**  *The genres the title falls under.*
+    - `description`:     **object**  *A brief summary of the title.*
 - Summary of central tendency and dispersion for numerical features.
 - Distribution of categorical features.
 
