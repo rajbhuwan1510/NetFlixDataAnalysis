@@ -39,6 +39,11 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 
 ### Data Understanding
 
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
 - Number of rows and columns: [8807,9]
 | Column name     | Type              | Description                |
 | :-------------| :-----------------| :------------------------- |
