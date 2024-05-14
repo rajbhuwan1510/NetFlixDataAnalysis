@@ -39,26 +39,21 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 
 ### Data Understanding
 
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
+| Column name   | Type             | Description                                            |
+| :-------------| :--------------- | :----------------------------------------------------- |
+| `show_id`     | `object`         | A unique identifier for each title.                   |
+| `type`        | `object`         | The category of the title, which is either 'Movie' or 'TV Show'. |
+| `title`       | `object`         | The name of the movie or TV show.                     |
+| `director`    | `object`         | The director(s) of the movie or TV show.              |
+| `cast`        | `object`         | The list of main actors/actresses in the title.       |
+| `country`     | `object`         | The country or countries where the movie or TV show was produced. |
+| `date_added`  | `object`         | The date the title was added to Netflix.              |
+| `release_year`| `datetime64[ns]` | The year the movie or TV show was originally released. |
+| `rating`      | `object`         | The age rating of the title.                          |
+| `duration`    | `int`            | The duration of the title, in minutes for movies and seasons for TV shows. |
+| `listed_in`   | `object`         | The genres the title falls under.                     |
+| `description` | `object`         | A brief summary of the title.                         |
 
-- Number of rows and columns: [8807,9]
-| Column name     | Type              | Description                |
-| :-------------| :-----------------| :------------------------- |
-| `show_id`     | `object`          |  *A unique identifier for each title.* |
-| `type`        | `object`          | *The category of the title, which is either 'Movie' or 'TV Show'.* |
-| `title`       | `object`          | *The name of the movie or TV show.* |
-| `director`    | `object`          | *The director(s) of the movie or TV 8show.* |
-| `cast`        | `object`          | *The list of main actors/actresses in the title* |
-| `country`     | `object`          | *The country or countries where the movie or TV show was produced.* |
-| `date_added`  | `object`          | *The date the title was added to Netflix.* |
-| `release_year`| `datetime64[ns]`  | *The year the movie or TV show was originally released.* |
-| `rating`      | `object`          | *The age rating of the title.* |
-| `duration`    | `int`          | *The duration of the title, in minutes for movies and seasons for TV shows.* |
-| `listed_in`   | `object`          | *The genres the title falls under.*|
-| `description` | `object`          | *A brief summary of the title.* |
 
 
 ## Data Exploration and Visualization
