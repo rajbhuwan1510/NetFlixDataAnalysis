@@ -1,3 +1,9 @@
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/rajbhuwan1510/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajbhuwan-jaitawat/)
+
+[![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)](https://docs.google.com/presentation/d/1Nm-RP4LRsWzELmdVWoL_7LVz67Sx2xoCGu53aKcVxH0/edit#slide=id.g2710a2587c9_1_1438)
 # Netflix Content Analysis Project
 
 ## Overview
@@ -6,51 +12,49 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 
 ## Project Structure
 
-- `data/` https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows:
-  - Contains datasets used for analysis.
-- `notebooks/`: https://github.com/rajbhuwan1510/NetFlixDataAnalysis/blob/main/Netflix_project.ipynb
-  - Jupyter notebooks containing code for data analysis.
-- `results/`: Output files, visualizations, and summary reports.
+- Get data from here [![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white) ](https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows:)
+- Contains datasets used for analysis. [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/blob/main/Netflix_project.ipynb)
+    - Jupyter notebooks containing code for data analysis.
 
-### Data Cleaning
+- `results` **Genereated by WorldCloud**![walpaper](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/9fdf0301-da6c-40bd-a5e2-018d267ffa59)
 
-- Checked for missing values and handled them appropriately (dropping rows/columns, imputation).
-- Ensured correct data types for each column.
-- Identified and handled outliers or anomalies in the data.
 
-### Data Understanding
+## Data Cleaning
 
-- Number of rows and columns: [8807,9]
-- `data/` https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows:
-  - Contains datasets used for analysis.
-- `notebooks/`: https://github.com/rajbhuwan1510/NetFlixDataAnalysis/blob/main/Netflix_project.ipynb
-  - Jupyter notebooks containing code for data analysis.
-- `results/`: Output files, visualizations, and summary reports.
+In this project, comprehensive data cleaning was performed to ensure the quality and integrity of the dataset. The cleaning process involved several steps aimed at standardizing and preparing the data for analysis.
 
-### Data Cleaning
+1. **Standardizing Date Formats:**
+   - The `release_date` column was converted into a standardized date format to facilitate easier analysis.
+   - Additionally, a consistency check was implemented to ensure that the `release_date` does not exceed the `added_date`. Any discrepancies found were addressed by dropping the corresponding data entries, ensuring data accuracy.
 
-- Checked for missing values and handled them appropriately (dropping rows/columns, imputation).
-- Ensured correct data types for each column.
-- Identified and handled outliers or anomalies in the data.
+2. **Handling Multi-Value Columns:**
+   - Columns such as `cast`, `listed_in`, `country`, and `director` often contained multiple values separated by commas. To facilitate better analysis, these columns were transformed into lists, allowing for easier parsing and exploration of the data.
+   - Furthermore, missing values in these columns were addressed by filling them with appropriate placeholders to maintain data integrity.
+
+3. **Correcting Misplaced Data:**
+   - During the data cleaning process, instances were identified where data was mistakenly placed or entered in incorrect columns. These errors were rectified to ensure the accuracy and consistency of the dataset.
+   - By conducting thorough checks and validations, such discrepancies were identified and corrected, enhancing the reliability of the dataset for further analysis.
+
+
 
 ### Data Understanding
 
 - Number of rows and columns: [8807,9]
-  - Data types :
-    - `show_id`         : **object**  *A unique identifier for each title.*
-    - `type` :             **object**  *The category of the title, which is either 'Movie' or 'TV Show'.*
-    - `title` :            **object**  *The name of the movie or TV show.*
-    - `director` :       **object**  *The director(s) of the movie or TV 8show. (Contains null values for some entries, especially TV shows where this information might not be applicable.)
-    - `cast`:            **object**  *The list of main actors/actresses in the title. (Some entries might not have this information.)*
-    - `country`:         **object**  *The country or countries where the movie or TV show was produced.*
-    - `date_added`:      **datetime64[ns]**  *The date the title was added to Netflix.*
-    - `release_year`:    **int64**  *The year the movie or TV show was originally released.*
-    - `rating`:        **object**  *The age rating of the title.*
-    - `duration`:        **object**  *The duration of the title, in minutes for movies and seasons for TV shows.*
-    - `listed_in`:       **object**  *The genres the title falls under.*
-    - `description`:     **object**  *A brief summary of the title.*
-- Summary of central tendency and dispersion for numerical features.
-- Distribution of categorical features.
+| Column name     | Type              | Description                |
+| :-------------| :-----------------| :------------------------- |
+| `show_id`     | `object`          |  *A unique identifier for each title.* |
+| `type`        | `object`          | *The category of the title, which is either 'Movie' or 'TV Show'.* |
+| `title`       | `object`          | *The name of the movie or TV show.* |
+| `director`    | `object`          | *The director(s) of the movie or TV 8show.* |
+| `cast`        | `object`          | *The list of main actors/actresses in the title* |
+| `country`     | `object`          | *The country or countries where the movie or TV show was produced.* |
+| `date_added`  | `object`          | *The date the title was added to Netflix.* |
+| `release_year`| `datetime64[ns]`  | *The year the movie or TV show was originally released.* |
+| `rating`      | `object`          | *The age rating of the title.* |
+| `duration`    | `int`          | *The duration of the title, in minutes for movies and seasons for TV shows.* |
+| `listed_in`   | `object`          | *The genres the title falls under.*|
+| `description` | `object`          | *A brief summary of the title.* |
+
 
 ## Data Exploration and Visualization
 
@@ -63,8 +67,20 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 ## Insights and Conclusion
 
 - Key findings from the EDA, including patterns or relationships discovered.
-- Discussion on the implications of the findings and their relevance.
-- Conclusions drawn from the analysis and proposed avenues for further research or analysis.
+
+- Drawn many interesting inferences from the dataset Netflix titles; here’s a summary of the few of them:
+
+- The most content type on Netflix is *`Movies`*.
+
+- The country by the amount of the produces content is the *`United States`*,
+
+- The most popular director on Netflix , with the most titles, is *`Rajiv Chilaka`*.
+
+- *`International Movies`* is a genre that is mostly in Netflix.
+
+- largest count of Netflix content is made with a *`TV-MA`* rating.
+
+- The most popular actor on Netflix movie, based on the number of titles, is *`Anupam Kher`*.
 
 ## Questions Explored
 
@@ -72,24 +88,30 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 ![CategoryVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/50c593bd-0c44-475b-aa04-12d3640a543e)
 
 2. Distribution of Genres
-![Different GenreDistribution](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/27a8b4f6-c220-430c-94b3-3f2ff5cfc74b)
+![Different GenreDistribution](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/3d298930-3415-427b-a5ef-507614219e5a)
 
-3. Distribution by Country of Origin
-
+3. Distribution by Country of Origin![countries](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/e90aa3eb-8d79-4fd7-b0e8-75027cd452a7)
 
 4. Content Duration over Years
 ![durationOverYear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/12f28298-fc12-4ea7-a50c-b24f8c355c6a)
 
 5. Distribution by Rating Categories
-![Distribution of Content Across Different Rating Categories](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/5ecfddbe-fb5d-4379-b361-301ff02e29ad)
+![Distribution of Content Across Different Rating Categories](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/bbe23494-2105-4907-b9ef-3a32471c8977)
 
 6. Volume of Releases Over Time
+- Movies
+![Movies distribution over time](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/8b670250-3af6-45f6-8339-837bdb97d905)
+- TV Shows
+![Distribution of TV Shows Durations histplot](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/802cb8a0-c1b6-4784-ac09-0d29be031ef5)
+
 7. Content Addition Activity Over Months/Quarters
 8. Patterns in Release Dates
+![CategoryVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/1506580f-3302-4e49-b93a-2c15b169074e)
+
 9. Frequent Directors and their Content Distribution
 10. Frequent Cast Members and their Involvement
 11. Changes in Genre Popularity Over Time
-![Popularity of Genres Over Time](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/1b3c67f0-0227-4e6d-812d-2a2b8526e526)
+![GenreVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/a44bad31-a938-4c10-a72a-76d52a10dbd0)
 
 12. Relationship Between Content Duration and Rating
 ![RatingCount](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/f03147db-7e9b-41c3-9c98-93167ad8dc07)
