@@ -38,8 +38,8 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 ### Data Understanding
 
 - Number of rows and columns: [8807,9]
-| Column name   | Type             | Description                                            |
-| -------------|--------------- | ----------------------------------------------------- |
+| Column name  | Type | Description |
+| --- | --- |  ---|
 | `show_id`     | `object`         | A unique identifier for each title.                   |
 | `type`        | `object`         | The category of the title, which is either 'Movie' or 'TV Show'. |
 | `title`       | `object`         | The name of the movie or TV show.                     |
@@ -51,7 +51,7 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 | `rating`      | `object`         | The age rating of the title.                          |
 | `duration`    | `int`            | The duration of the title, in minutes for movies and seasons for TV shows. |
 | `listed_in`   | `object`         | The genres the title falls under.                     |
-| `description` | `object`         | A brief summary of the title.                         |
+| `description` | `object`         | A brief summary of the title.    
 
 
 
