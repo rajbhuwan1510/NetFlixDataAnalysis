@@ -1,10 +1,10 @@
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/rajbhuwan1510/)
+| Work   | Owner             | Presentation                                            |
+| :-------------| :--------------- | :----------------------------------------------------- |
+|[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/rajbhuwan1510/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajbhuwan-jaitawat/)| [![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)](https://docs.google.com/presentation/d/1Nm-RP4LRsWzELmdVWoL_7LVz67Sx2xoCGu53aKcVxH0/edit#slide=id.g2710a2587c9_1_1438)
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajbhuwan-jaitawat/)
-
-[![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)](https://docs.google.com/presentation/d/1Nm-RP4LRsWzELmdVWoL_7LVz67Sx2xoCGu53aKcVxH0/edit#slide=id.g2710a2587c9_1_1438)
 # Netflix Content Analysis Project
+
 
 ## Overview
 
@@ -12,7 +12,7 @@ Welcome to the Netflix Content Analysis Project! This project aims to analyze va
 
 ## Project Structure
 
-- Get data from here [![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white) ](https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows:)
+- Get data from here [![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white) ](https://www.kaggle.com/datasets/ariyoomotade/netflix-data-cleaning-analysis-and-visualization)
 - Contains datasets used for analysis. [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/blob/main/Netflix_project.ipynb)
     - Jupyter notebooks containing code for data analysis.
 
@@ -34,11 +34,10 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 3. **Correcting Misplaced Data:**
    - During the data cleaning process, instances were identified where data was mistakenly placed or entered in incorrect columns. These errors were rectified to ensure the accuracy and consistency of the dataset.
    - By conducting thorough checks and validations, such discrepancies were identified and corrected, enhancing the reliability of the dataset for further analysis.
-
-
-
+   
 ### Data Understanding
 
+- Number of rows and columns: [8807,9]
 | Column name   | Type             | Description                                            |
 | :-------------| :--------------- | :----------------------------------------------------- |
 | `show_id`     | `object`         | A unique identifier for each title.                   |
@@ -104,17 +103,21 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 - TV Shows
 ![Distribution of TV Shows Durations histplot](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/802cb8a0-c1b6-4784-ac09-0d29be031ef5)
 
-7. Content Addition Activity Over Months/Quarters
+7. Content Addition Activity Over Months/Quarters![Content Addition Activity Over MonthsQuarters](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/6519c404-4d8e-4209-8135-feb05cb45c23)
+
 8. Patterns in Release Dates
 ![CategoryVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/1506580f-3302-4e49-b93a-2c15b169074e)
 
-9. Frequent Directors and their Content Distribution
-10. Frequent Cast Members and their Involvement
+9. Frequent Directors and their Content Contribution![top 10 director](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/8cce1f24-c914-46a7-b5bf-9661a9ea693f)
+
+10. Frequent Cast Members and their Involvement![top 10 cast](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/4a9d3bf1-0f69-4f42-8d40-bd525870b3c0)
+
 11. Changes in Genre Popularity Over Time
-![GenreVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/a44bad31-a938-4c10-a72a-76d52a10dbd0)
+- Movies![Popularity of Genres Over Time for movies](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/a41de859-012e-4da2-b7e4-de16a29fdaab)
+- TV Shows![Popularity of Genres Over Time for TV Shows](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/6e951cf0-5726-4558-b123-dea1bfed8bd7)
 
 12. Relationship Between Content Duration and Rating
-![RatingCount](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/f03147db-7e9b-41c3-9c98-93167ad8dc07)
+![Different GenreDistribution](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/2c94f8cd-1494-4586-9607-ece872ffe40f)
 
 
 13. Correlation Between Rating and Country of Origin
@@ -128,21 +131,23 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 ![CastVSgenre](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/96f7d3d8-4021-4e48-9c75-236d476911aa)
 
 16. Co-occurrence of Genres
-![relationBetweenGenreandCount (1)](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/b7a8afa5-d7a4-462b-b3ce-000852824260)
+![Genre count](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/684dfcd2-2ec4-4cc0-9982-8ecc4ab28ecf)
+
 
 ![relationBetweenGenereandcount2](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/06cf604a-2cef-4547-9d2a-9bc8e6b0c5bb)
 
 
-17. Evolution of Content Themes Over Time
+17. Evolution of Content Themes Over Time![Popularity of Genres Over Time](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/ffd2077f-11b6-4831-9e08-81750b2ea32a)
+
 
 18. Comparison Between Original and Licensed Content
-![NetflixOriginalVSlicensed](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/552489fa-0ee2-4139-9b62-ea28f19e9913)
+![netflix orignal or not](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/87d3b8c1-61e4-48f2-8893-26a5e72d8f1a)
 
 19. Changes in Diversity of Content Over Time
 ![GenreVSratingVScountry](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/328392d2-71f5-4eaf-a671-8f2209f74591)
 
 20. Correlation Between Age of Content and Popularity/Rating
-![audienceVSyear](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/f7256416-a0c8-44e5-b198-42ad66f433b6)
+![audience guidence violen](https://github.com/rajbhuwan1510/NetFlixDataAnalysis/assets/92216824/315dda31-765f-4671-b5f4-e315ceefd330)
 
 
 ## Technologies Used
