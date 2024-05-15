@@ -37,7 +37,7 @@ In this project, comprehensive data cleaning was performed to ensure the quality
    
 ### Data Understanding
 
-- Number of rows and columns: [8807,9]
+- Number of rows and columns: [8807,12]
 
 | Column name   | Type             | Description                                            |
 | :-------------| :--------------- |:----------------------------------------------------- |
