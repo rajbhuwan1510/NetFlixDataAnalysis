@@ -39,7 +39,7 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 
 - Number of rows and columns: [8807,9]
 | Column name   | Type             | Description                                            |
-| :-------------| :--------------- | :----------------------------------------------------- |
+| -------------|--------------- | ----------------------------------------------------- |
 | `show_id`     | `object`         | A unique identifier for each title.                   |
 | `type`        | `object`         | The category of the title, which is either 'Movie' or 'TV Show'. |
 | `title`       | `object`         | The name of the movie or TV show.                     |
