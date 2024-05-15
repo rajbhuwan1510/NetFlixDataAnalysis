@@ -39,9 +39,21 @@ In this project, comprehensive data cleaning was performed to ensure the quality
 
 - Number of rows and columns: [8807,9]
 
-| Work   | Owner             | Presentation                                            |
-| :-------------| :--------------- | :----------------------------------------------------- |
-|[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/rajbhuwan1510/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajbhuwan-jaitawat/)| [![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white)](https://docs.google.com/presentation/d/1Nm-RP4LRsWzELmdVWoL_7LVz67Sx2xoCGu53aKcVxH0/edit#slide=id.g2710a2587c9_1_1438)
+| Column name   | Type             | Description                                            |
+| :-------------| :--------------- |:----------------------------------------------------- |
+| `show_id`     | `object`         | A unique identifier for each title.|
+| `type`        | `object`         | The category of the title, which is either 'Movie' or 'TV Show'.|
+| `title`       | `object`         | The name of the movie or TV show.|
+| `director`    | `object`         | The director(s) of the movie or TV show.              |
+| `cast`        | `object`         | The list of main actors/actresses in the title.       |
+| `country`     | `object`         | The country or countries where the movie or TV show was produced. |
+| `date_added`  | `object`         | The date the title was added to Netflix.              |
+| `release_year`| `datetime64[ns]` | The year the movie or TV show was originally released. |
+| `rating`      | `object`         | The age rating of the title.                          |
+| `duration`    | `int`            | The duration of the title, in minutes for movies and seasons for TV shows. |
+| `listed_in`   | `object`         | The genres the title falls under.                     |
+| `description` | `object`         | A brief summary of the title.                         |
+
 
 
 
